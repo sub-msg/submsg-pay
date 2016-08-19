@@ -17,22 +17,16 @@ public class AlipayConfig {
 
 	// 合作身份者ID，签约账号，以2088开头由16位纯数字组成的字符串，查看地址：https://b.alipay.com/order/pidAndKey.htm
 	public static String partner = "2088102577012481";
-	
 	// 收款支付宝账号，以2088开头由16位纯数字组成的字符串，一般情况下收款账号就是签约账号
 	public static String seller_id = partner;
-
 	//商户的私钥,需要PKCS8格式，RSA公私钥生成：https://doc.open.alipay.com/doc2/detail.htm?spm=a219a.7629140.0.0.nBDxfy&treeId=58&articleId=103242&docType=1
 	public static String private_key = "MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAKrSk45os85x9s2XFARyUMMmJ6YJ1bYxPws3XzFOSMlERNZZJsfrYeeLJq3l4gf5Z+NdmSP3Rb2cQMBmpusPcx8Jx/f0WA8tkA3KlAtcX5q3GvvFOYhESV9efG5MTaM0co34lX53mtrFOuziJC1U/QNBXxriRVYjluYBKnlUHfubAgMBAAECgYBAzY3IspOzt6wnJi8j2LImtizIYma+rUP7X1AvhkE6iTmMD1oU8Yi8rB9KTTFIUSdGK9XSvRWp7sLpuoeMGNpUx1Z04tj76WoS3oAsXBLxPmRApDl6a2grX8PenLdGI50tDMqeOvDugd6B3a/v9mOTVitcfNrX9mecJswA4yfQcQJBANOHMDAzrDFWgYoC4TiS4ZOy0FH313AxSoq1LwmZNEzreDlS9ihBlJDVSnzxutskedb8oFDRhz+agminm7Z4VMcCQQDOvIvIsdY5LqagdgisLZ+b59xIgL3wA1XiI8/SeG9ecU+DQNqWE3ekUC2wXbKPZD9Cpvy3zgADpI0hBmvdcGaNAkAe2XqHrSGR2IHv9NeP/qvzdIK5UaIT9LxgWmhPyA4+oaDZC2ZnHJlkPhcs/bw4tasnVZSz9Lr65bfbN4aYKBiFAkAnngwvjpzd4mm+EECDNk8C4oDdSAaeCxWXO4Ok8r1s3Mv+/BunbN2dmFvZE2uXfP9+d1+wnYJ1MEB3VrKvAc41AkA5raTAlRURf6vW6M2qQmjBdG5tPpeRmzI2Y1WIlyMDdtEBMxyM4BzBU/nBkHsBePWLjiEZUIk9VrCnt7Hsry84";
-	
 	// 支付宝的公钥,查看地址：https://b.alipay.com/order/pidAndKey.htm
 	public static String alipay_public_key  = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCnxj/9qwVfgoUh/y2W89L6BkRAFljhNhgPdyPuBV64bfQNN1PjbCzkIM6qRdKBoLPXmKKMiFYnkd6rAoprih3/PrQEB/VsW8OoM8fxn67UDYuyBTqA23MML9q1+ilIZwBC2AQ2UBVOrFXfFl75p6/B5KsiNG9zpgmLCUYuLkxpLQIDAQAB";
-
 	// 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
 	public static String notify_url = "http://pay.submsg.cn/pay/aliPaynotify.sm";
-
 	// 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-	public static String return_url = "http://pay.submsg.cn/pay/return_url.jsp";
-
+	public static String return_url = "http://pay.submsg.cn/pay/aliPayReturn.sm";
 	// 签名方式
 	public static String sign_type = "RSA";
 	
